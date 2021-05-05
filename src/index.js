@@ -72,4 +72,33 @@ const myFunc = function(name) {
 
 const arrowFunc = ( name ) => `Hola ${ name }`;
 
+// Desestructuración de objetos
 
+const myObj = {
+    name: "Alan",
+    age: 24,
+    lastname: "Vargas"
+}
+
+const { name: nombreFromObj, age } = myObj
+console.log( "Obj properties from consts: ", nombreFromObj, " && ", age );
+
+const getName = ({ name }) => {
+    return `Hola ${ name }`
+}
+
+console.log( getName( myObj ) );
+
+// Promesas
+
+const promise = new Promise( (resolve, reject) => {
+
+    setTimeout( () => {
+        console.log("TimeOut dentro de la promesa")
+        resolve( 10 ); // Resolve puede recibir un argumento para pasarlo al then();
+    }, 2000)
+
+});
+
+promise.then( (arg) => console.log("Then de la promesa: ", arg) )
+.catch( () => console.error("REJECT DE LA PROMESA") )
