@@ -5,4 +5,4 @@ import './index.css'
 
 const myRoot = document.querySelector("#root");
 
-ReactDOM.render( <CounterApp value={ 123456789 }/>, myRoot );
+ReactDOM.render( <CounterApp value={ 30 }/>, myRoot );
