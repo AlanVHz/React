@@ -1,4 +1,11 @@
 html, body {
     color: white;
     background-color: #21232a;
+    padding: 5%;
+}
+
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    color: #21232a;
 }
