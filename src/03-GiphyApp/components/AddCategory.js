@@ -14,7 +14,7 @@ function AddCategory({ setCategories }) {
         if( inputState.trim() !== "" ) {
             // No necesitamos inserter categories en las props porque es suficiente con la
             // referencia que nos entrega SetCategories
-            setCategories( cat => [ ...cat, inputState ] )
+            setCategories( cat => [ inputState,  ...cat, ] )
             setInputValue("");
         }
     }
