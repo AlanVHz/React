@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import GifExpertApp from "./03-GiphyApp/GifExpertApp";
+import HooksApp from "./05-HooksApp/HooksApp";
 import './index.css'
 
 const myRoot = document.querySelector("#root");
 
-ReactDOM.render( <GifExpertApp />, myRoot )
+ReactDOM.render( <HooksApp />, myRoot )
